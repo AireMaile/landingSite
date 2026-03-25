@@ -101,9 +101,13 @@
   <script>
     function handleSubmit(e) {
       e.preventDefault();
+      const form = e.target;
+      const button = form.querySelector('button');
       const msg = document.getElementById('form-msg');
+      button.disabled = true;
+      button.textContent = 'Notified!';
       msg.textContent = "You're on the list! We'll reach out when ZORA launches.";
-      e.target.reset();
+      form.reset();
     }
   </script>
 
