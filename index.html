@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZORA — Track your meds. Find what works.</title>
+  <meta name="description" content="ZORA helps you understand your medication routine so you can feel your best and communicate what's working to the people helping you." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="nav-icon"></div>
+      <span class="nav-wordmark">ZORA</span>
+    </a>
+    <ul class="nav-links">
+      <li class="hide-mobile"><a href="index.html">About</a></li>
+      <li class="hide-mobile"><a href="privacy.html">Privacy</a></li>
+      <li class="hide-mobile"><a href="terms.html">Terms</a></li>
+      <li><a href="#notify" class="nav-cta">Coming Soon</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section style="background: var(--hero-gradient);">
+    <div class="section-inner">
+      <div class="hero-badge">📱 Coming to App Store</div>
+      <h1>Track your meds.<br/><span style="color: #fff3cc;">Find what works.</span></h1>
+      <p class="lead">ZORA helps you understand your medication routine so you can feel your best — and actually communicate what's working to the people helping you.</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="#notify"><button class="btn-primary">Notify Me at Launch</button></a>
+        <a href="#how-it-works"><button class="btn-ghost">Learn More</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WE BUILT ZORA -->
+  <section style="background: var(--bg-off-white);">
+    <div class="section-inner">
+      <p class="eyebrow">Why We Built ZORA</p>
+      <h2>Finding the right medication<br/>shouldn't take years.</h2>
+      <p class="placeholder-text">[Your story goes here. This is where you'll share what inspired ZORA and the personal experience that made you want to build it.]</p>
+      <p class="placeholder-text">[A second paragraph can go here — the moment that made the problem real, and why you decided to do something about it.]</p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" style="background: white;">
+    <div class="section-inner">
+      <p class="eyebrow">How It Works</p>
+      <h2>Simple to use. Powerful over time.</h2>
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="how-icon how-icon-blue">💊</div>
+          <p class="how-title">Log your meds</p>
+          <p class="how-desc">Add your medications and dosages in seconds.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-icon how-icon-mid">📈</div>
+          <p class="how-title">Track patterns</p>
+          <p class="how-desc">See how you feel over days, weeks, and months.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-icon how-icon-gold">🗣️</div>
+          <p class="how-title">Share with your doctor</p>
+          <p class="how-desc">Walk into every appointment with the full picture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON CTA -->
+  <section id="notify" style="background: var(--cta-gradient);">
+    <div class="section-inner">
+      <h2 style="color: white;">Coming soon to the App Store.</h2>
+      <p style="color: rgba(255,255,255,0.9); margin-bottom: 28px;">Be the first to know when ZORA launches.</p>
+      <form class="email-form" onsubmit="handleSubmit(event)">
+        <input class="email-input" type="email" placeholder="Enter your email..." required />
+        <button type="submit" class="email-submit">Notify Me</button>
+      </form>
+      <p id="form-msg" style="color: white; margin-top: 14px; font-size: 14px; min-height: 20px;"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <div class="footer-icon"></div>
+      <span class="footer-wordmark">ZORA</span>
+      <span class="footer-copy">© 2026 The ZORA Team</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('form-msg');
+      msg.textContent = "You're on the list! We'll reach out when ZORA launches.";
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
