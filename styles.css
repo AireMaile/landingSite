@@ -43,15 +43,14 @@ nav {
   width: 32px;
   height: 32px;
   border-radius: 9px;
-  background: var(--icon-gradient);
   border: 2px solid rgba(255,255,255,0.8);
   flex-shrink: 0;
+  object-fit: cover;
 }
 .nav-wordmark {
-  color: white;
-  font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 1.5px;
+  height: 22px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 .nav-links {
   display: flex;
@@ -93,14 +92,13 @@ footer {
   width: 26px;
   height: 26px;
   border-radius: 7px;
-  background: var(--icon-gradient);
   flex-shrink: 0;
+  object-fit: cover;
 }
 .footer-wordmark {
-  color: white;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 1px;
+  height: 18px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 .footer-copy {
   color: #555;
