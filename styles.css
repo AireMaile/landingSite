@@ -2,7 +2,7 @@
 :root {
   --blue: #5BB8F5;
   --blue-mid: #85ccf5;
-  --gold: #F5C846;
+  --gold: #ffc55b;
   --dark: #1a1a2e;
   --body-text: #555;
   --heading-text: #1a1a2e;
@@ -12,7 +12,7 @@
   --hero-gradient: linear-gradient(170deg, var(--blue) 0%, var(--blue-mid) 45%, var(--gold) 100%);
   --cta-gradient: linear-gradient(135deg, var(--blue) 0%, var(--gold) 100%);
   --icon-gradient: linear-gradient(160deg, var(--blue) 0%, var(--gold) 100%);
-  --gold-dark: #f5a623;
+  --gold-dark: #e6a832;
   --dark-hover: #2a2a4e;
 }
 
