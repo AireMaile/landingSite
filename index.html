@@ -40,8 +40,159 @@
         </div>
       </div>
 
-      <!-- Right: phone mockup (added in Task 4) -->
-      <div class="hero-phone"></div>
+      <!-- Right: phone mockup -->
+      <div class="hero-phone">
+        <div style="width:200px;height:410px;overflow:hidden;background:#ffffff;border-radius:36px;border:5px solid rgba(255,255,255,0.4);box-shadow:0 30px 60px rgba(0,0,0,0.3),0 0 0 1px rgba(0,0,0,0.06);display:flex;flex-direction:column;">
+
+          <!-- Status bar -->
+          <div style="background:white;padding:10px 16px 4px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">
+            <span style="color:#1c1c1e;font-size:9px;font-weight:600;">9:41</span>
+            <div style="display:flex;gap:4px;align-items:center;">
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="#1c1c1e"><rect x="0" y="5" width="2" height="3" rx="0.5"/><rect x="3" y="3" width="2" height="5" rx="0.5"/><rect x="6" y="1" width="2" height="7" rx="0.5"/><rect x="9" y="0" width="2" height="8" rx="0.5"/></svg>
+              <svg width="16" height="8" viewBox="0 0 16 8" fill="none"><rect x="0" y="1" width="13" height="6" rx="1.5" stroke="#1c1c1e" stroke-width="0.8"/><rect x="1" y="2" width="9" height="4" rx="0.8" fill="#1c1c1e"/><path d="M14 3v2" stroke="#1c1c1e" stroke-width="1" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+
+          <!-- Nav bar -->
+          <div style="background:white;padding:2px 14px 8px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">
+            <span style="font-size:14px;font-weight:900;color:#5DABFE;letter-spacing:1.5px;">ZORA</span>
+            <i class="ti ti-settings" style="color:#8e8e93;font-size:14px;"></i>
+          </div>
+
+          <!-- Month nav -->
+          <div style="background:white;padding:0 14px 6px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">
+            <i class="ti ti-chevron-left" style="color:#8e8e93;font-size:12px;"></i>
+            <span style="color:#1c1c1e;font-size:11px;font-weight:600;">March 2026</span>
+            <i class="ti ti-chevron-right" style="color:#8e8e93;font-size:12px;"></i>
+          </div>
+
+          <!-- Weekday bar -->
+          <div style="background:white;display:grid;grid-template-columns:repeat(7,1fr);padding:0 6px 4px;flex-shrink:0;">
+            <div style="text-align:center;font-size:7px;font-weight:600;color:#8e8e93;">S</div>
+            <div style="text-align:center;font-size:7px;font-weight:600;color:#8e8e93;">M</div>
+            <div style="text-align:center;font-size:7px;font-weight:600;color:#8e8e93;">T</div>
+            <div style="text-align:center;font-size:7px;font-weight:600;color:#8e8e93;">W</div>
+            <div style="text-align:center;font-size:7px;font-weight:600;color:#8e8e93;">T</div>
+            <div style="text-align:center;font-size:7px;font-weight:600;color:#8e8e93;">F</div>
+            <div style="text-align:center;font-size:7px;font-weight:600;color:#8e8e93;">S</div>
+          </div>
+
+          <!-- Divider -->
+          <div style="height:0.5px;background:#e5e5ea;flex-shrink:0;margin:0 10px 2px;"></div>
+
+          <!-- Calendar grid: March 2026 starts Sunday -->
+          <!-- Green=rgba(52,199,89,0.18) Yellow=rgba(255,204,0,0.22) Red=rgba(255,59,48,0.15) -->
+          <!-- Logged: green 8,9,12,15,16,18,20,21,23,24,26,27 | yellow 11,19,25 | red 14,22 | selected(blue) 28 | plain 1-7,10,13,17,29-31 -->
+          <div style="background:white;display:grid;grid-template-columns:repeat(7,1fr);padding:2px 4px;flex-shrink:0;">
+            <!-- Row 1: 1-7 unlogged -->
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">1</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">2</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">3</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">4</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">5</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">6</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">7</span></div>
+            <!-- Row 2: 8 green, 9 green, 10 plain, 11 yellow, 12 green, 13 plain, 14 red -->
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">8</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">9</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">10</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(255,204,0,0.22);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">11</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">12</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">13</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(255,59,48,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">14</span></div></div>
+            <!-- Row 3: 15 green, 16 green, 17 plain, 18 green, 19 yellow, 20 green, 21 green -->
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">15</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">16</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">17</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">18</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(255,204,0,0.22);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">19</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">20</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">21</span></div></div>
+            <!-- Row 4: 22 red, 23 green, 24 green, 25 yellow, 26 green, 27 green, 28 selected(blue) -->
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(255,59,48,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">22</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">23</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">24</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(255,204,0,0.22);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">25</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">26</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:rgba(52,199,89,0.18);border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:600;color:#1c1c1e;">27</span></div></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><div style="width:20px;height:20px;background:#5DABFE;border-radius:50%;display:flex;align-items:center;justify-content:center;"><span style="font-size:9px;font-weight:700;color:white;">28</span></div></div>
+            <!-- Row 5: 29-31 future/unlogged -->
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">29</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">30</span></div>
+            <div style="display:flex;align-items:center;justify-content:center;height:24px;"><span style="font-size:9px;color:#1c1c1e;">31</span></div>
+            <div></div><div></div><div></div><div></div>
+          </div>
+
+          <!-- Bottom sheet -->
+          <div style="background:#fefcfe;border-radius:18px 18px 0 0;flex:1;padding:8px 14px 0;box-shadow:0 -4px 20px rgba(0,0,0,0.1);overflow:hidden;">
+            <!-- Drag handle -->
+            <div style="width:28px;height:3px;background:#d1d1d6;border-radius:2px;margin:0 auto 8px;"></div>
+            <!-- Date + Edit -->
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <span style="font-size:10px;font-weight:600;color:#1c1c1e;">Today, March 28</span>
+              <span style="font-size:9px;color:#5DABFE;font-weight:500;">Edit</span>
+            </div>
+            <!-- Overall score -->
+            <div style="margin-bottom:6px;">
+              <div style="font-size:7px;font-weight:500;color:#8e8e93;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:1px;">Overall</div>
+              <div style="display:flex;align-items:baseline;gap:3px;">
+                <span style="font-size:20px;font-weight:700;color:#34c759;line-height:1;">4.2</span>
+                <span style="font-size:8px;color:#c7c7cc;">/ 5</span>
+              </div>
+            </div>
+            <!-- Divider -->
+            <div style="height:0.5px;background:#e5e5ea;margin-bottom:6px;"></div>
+            <!-- Medication rows -->
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:5px;">
+              <i class="ti ti-pill" style="font-size:11px;color:#5DABFE;flex-shrink:0;"></i>
+              <span style="font-size:8px;font-weight:500;color:#1c1c1e;">Sertraline  •  50mg  •  Morning</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:8px;">
+              <i class="ti ti-pill" style="font-size:11px;color:#5DABFE;flex-shrink:0;"></i>
+              <span style="font-size:8px;font-weight:500;color:#1c1c1e;">Wellbutrin  •  150mg  •  Morning</span>
+            </div>
+            <!-- Divider -->
+            <div style="height:0.5px;background:#e5e5ea;margin-bottom:6px;"></div>
+            <!-- Metric bars -->
+            <div style="display:flex;flex-direction:column;gap:5px;">
+              <!-- Mood: 5/5 -->
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:2px;">
+                  <span style="font-size:7px;font-weight:500;color:#8e8e93;">Mood</span>
+                  <span style="font-size:8px;font-weight:700;color:#34c759;">5</span>
+                </div>
+                <div style="height:5px;background:#f2f2f7;border-radius:3px;position:relative;">
+                  <div style="width:100%;height:100%;background:linear-gradient(to right,#ff3b30,#ffcc00,#34c759);border-radius:3px;"></div>
+                  <div style="position:absolute;right:-3px;top:-2px;width:9px;height:9px;background:white;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.25);"></div>
+                </div>
+              </div>
+              <!-- Energy: 4/5 -->
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:2px;">
+                  <span style="font-size:7px;font-weight:500;color:#8e8e93;">Energy</span>
+                  <span style="font-size:8px;font-weight:700;color:#34c759;">4</span>
+                </div>
+                <div style="height:5px;background:#f2f2f7;border-radius:3px;position:relative;">
+                  <div style="width:75%;height:100%;background:linear-gradient(to right,#ff3b30,#ffcc00,#34c759);border-radius:3px;"></div>
+                  <div style="position:absolute;left:calc(75% - 4px);top:-2px;width:9px;height:9px;background:white;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.25);"></div>
+                </div>
+              </div>
+              <!-- Sleep: 3/5 -->
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:2px;">
+                  <span style="font-size:7px;font-weight:500;color:#8e8e93;">Sleep</span>
+                  <span style="font-size:8px;font-weight:700;color:#ffcc00;">3</span>
+                </div>
+                <div style="height:5px;background:#f2f2f7;border-radius:3px;position:relative;">
+                  <div style="width:50%;height:100%;background:linear-gradient(to right,#ff3b30,#ffcc00,#34c759);border-radius:3px;"></div>
+                  <div style="position:absolute;left:calc(50% - 4px);top:-2px;width:9px;height:9px;background:white;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.25);"></div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /bottom sheet -->
+
+        </div><!-- /phone outer shell -->
+      </div><!-- /hero-phone -->
 
     </div>
   </section>
