@@ -168,7 +168,9 @@ h2 { font-size: 30px; font-weight: 800; color: var(--heading-text); line-height:
 
 /* ─── Hero badge pill ────────────────────────────────────── */
 .hero-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: rgba(255,255,255,0.25);
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 20px;
@@ -205,6 +207,7 @@ h2 { font-size: 30px; font-weight: 800; color: var(--heading-text); line-height:
 .how-icon-blue  { background: linear-gradient(135deg, var(--blue), var(--blue-mid)); }
 .how-icon-mid   { background: linear-gradient(135deg, var(--blue-mid), var(--blue)); }
 .how-icon-gold  { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); }
+.how-icon i     { font-size: 22px; color: white; }
 .how-title { font-weight: 700; color: var(--heading-text); margin-bottom: 6px; }
 .how-desc  { font-size: 14px; color: #777; line-height: 1.5; }
 
