@@ -21,7 +21,7 @@
       <li class="hide-mobile"><a href="index.html">About</a></li>
       <li class="hide-mobile"><a href="privacy.html">Privacy</a></li>
       <li class="hide-mobile"><a href="terms.html">Terms</a></li>
-      <li><a href="#notify" class="nav-cta">Coming Soon</a></li>
+      <li><a href="https://apps.apple.com/us/app/zora-health-med-journal/id6761033755" class="nav-cta" target="_blank" rel="noopener">Download</a></li>
     </ul>
   </nav>
 
@@ -31,11 +31,11 @@
 
       <!-- Left: copy -->
       <div class="hero-copy">
-        <div class="hero-badge"><i class="ti ti-device-mobile"></i> Coming to App Store</div>
+        <div class="hero-badge"><i class="ti ti-device-mobile"></i> Now on the App Store</div>
         <h1>Track your meds.<br/><span style="color: #fff3cc;">Find what works.</span></h1>
         <p class="lead">ZORA is a daily log for your medications and how they make you feel — so you can finally know if they're working, and communicate the full picture to the people helping you.</p>
         <div class="hero-actions">
-          <a href="#notify"><button class="btn-primary">Notify Me at Launch</button></a>
+          <a href="https://apps.apple.com/us/app/zora-health-med-journal/id6761033755" target="_blank" rel="noopener"><button class="btn-primary">Download on the App Store</button></a>
           <a href="#how-it-works"><button class="btn-ghost">Learn More</button></a>
         </div>
       </div>
@@ -233,16 +233,12 @@
     </div>
   </section>
 
-  <!-- COMING SOON CTA -->
-  <section id="notify" style="background: var(--cta-gradient);">
+  <!-- DOWNLOAD CTA -->
+  <section id="download" style="background: var(--cta-gradient);">
     <div class="section-inner">
-      <h2 style="color: white;">Launching Spring 2026 on the App Store.</h2>
-      <p style="color: rgba(255,255,255,0.9); margin-bottom: 28px;">Be the first to know when ZORA launches.</p>
-      <form class="email-form" onsubmit="handleSubmit(event)">
-        <input class="email-input" type="email" placeholder="Enter your email..." required />
-        <button type="submit" class="email-submit">Notify Me</button>
-      </form>
-      <p id="form-msg" style="color: white; margin-top: 14px; font-size: 14px; min-height: 20px;"></p>
+      <h2 style="color: white;">ZORA is live on the App Store.</h2>
+      <p style="color: rgba(255,255,255,0.9); margin-bottom: 28px;">Download ZORA and start finding what works for you.</p>
+      <a href="https://apps.apple.com/us/app/zora-health-med-journal/id6761033755" target="_blank" rel="noopener"><button class="btn-primary" style="background:white;color:var(--primary-color,#1c1c1e);">Download on the App Store</button></a>
     </div>
   </section>
 
@@ -258,19 +254,6 @@
       <li><a href="terms.html">Terms of Service</a></li>
     </ul>
   </footer>
-
-  <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = e.target;
-      const button = form.querySelector('button');
-      const msg = document.getElementById('form-msg');
-      button.disabled = true;
-      button.textContent = 'Notified!';
-      msg.textContent = "You're on the list! We'll reach out when ZORA launches.";
-      form.reset();
-    }
-  </script>
 
 </body>
 </html>
